@@ -20,7 +20,7 @@ export const Appointment = ({
         Today's appointment at {appointmentsTimeOfDay(startsAt)}
       </h4>
       <table>
-        <tbody>
+        <tbody data-testid="customer-details-table">
           <tr className="customer-name">
             <td>Customer</td>
             <td>
@@ -53,7 +53,9 @@ export const AppointmentsDayView = ({ appointments }) => {
   const [appointment, setAppointment] = useState(0);
 
   return (
-    <div id="appointmentsDayView">
+    <div
+      id="appointmentsDayView"
+      data-testid="appointments-wrapper">
       {appointments.length ? (
         <>
           <ol>
