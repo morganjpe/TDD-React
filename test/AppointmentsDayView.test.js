@@ -2,6 +2,8 @@ import ReactDom from 'react-dom';
 import ReactTestUtils from 'react-dom/test-utils';
 import React from 'react';
 
+import { createContainer } from './domManipulators';
+
 // mocks
 import { appointments } from '../src/sampleData';
 
